@@ -14,7 +14,7 @@ class SecondScreen : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.root.setOnClickListener {
-            val navNextScreen = Intent(this, CadScreen::class.java)
+            val navNextScreen = Intent(this, ThirdScreen::class.java)
             startActivity(navNextScreen)
         }
     }
