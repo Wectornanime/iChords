@@ -3,18 +3,18 @@ package com.example.opp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.opp.databinding.ActivityFirstScreenBinding
+import com.example.opp.databinding.ActivitySecondScreenBinding
 
-class FirstScreen : AppCompatActivity() {
+class SecondScreen : AppCompatActivity() {
 
-    private lateinit var binding: ActivityFirstScreenBinding
+    private lateinit var binding: ActivitySecondScreenBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityFirstScreenBinding.inflate(layoutInflater)
+        binding = ActivitySecondScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.root.setOnClickListener {
-            val navNextScreen = Intent(this, SecondScreen::class.java)
+            val navNextScreen = Intent(this, CadScreen::class.java)
             startActivity(navNextScreen)
         }
     }

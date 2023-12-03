@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Opp"
         tools:targetApi="31">
         <activity
+            android:name=".SecondScreen"
+            android:exported="false" />
+        <activity
             android:name=".FirstScreen"
             android:exported="false" />
         <activity
