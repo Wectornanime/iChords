@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">ichords</string>
-    <string name="txtScr1_txt1">Quem canta seus males espanta!</string>
-    <string name="txtScr1_txt2">A nova função karaokê está  sendo implementada</string>
+
+    <string name="txtFS_carTxt1">Quem canta seus males espanta!\nA nova função karaokê está  sendo implementada</string>
+    <string name="txtFS_carTxt2">Aprecie novos gêneros musicais e a nova aba comunidade</string>
+    <string name="txtFS_carTxt3">Desafie seus amigos! Novo sistema de rankeamento chegou para saber quem é o melhor da turma</string>
+
     <string name="txtBtnCad">cadastre-se agora</string>
     <string name="txtBtnCad2">Já tenho uma conta</string>
     <string name="txtScrCad">Crie uma conta gratuita agora, ou  realize o seu login em uma conta já existente</string>
