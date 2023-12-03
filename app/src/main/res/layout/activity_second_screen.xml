@@ -47,7 +47,8 @@
             android:autoStart="true"
             android:flipInterval="1500"
             android:inAnimation="@anim/slide_in_botton"
-            android:outAnimation="@anim/slide_out_top">
+            android:outAnimation="@anim/slide_out_top"
+            >
 
             <TextView
                 android:layout_width="match_parent"
@@ -55,6 +56,9 @@
                 android:text="@string/txtSS_carTxt1"
                 android:fontFamily="@font/inter_medium"
                 android:layout_gravity="center"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold"
                 />
 
             <TextView
@@ -63,6 +67,9 @@
                 android:text="@string/txtSS_carTxt2"
                 android:fontFamily="@font/inter_medium"
                 android:layout_gravity="center"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold"
                 />
 
             <TextView
@@ -71,6 +78,9 @@
                 android:text="@string/txtSS_carTxt3"
                 android:fontFamily="@font/inter_medium"
                 android:layout_gravity="center"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold"
                 />
 
             <TextView
@@ -79,6 +89,9 @@
                 android:text="@string/txtSS_carTxt4"
                 android:fontFamily="@font/inter_medium"
                 android:layout_gravity="center"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold"
                 />
 
             <TextView
@@ -87,6 +100,9 @@
                 android:text="@string/txtSS_carTxt5"
                 android:fontFamily="@font/inter_medium"
                 android:layout_gravity="center"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold"
                 />
 
             <TextView
@@ -95,6 +111,9 @@
                 android:text="@string/txtSS_carTxt6"
                 android:fontFamily="@font/inter_medium"
                 android:layout_gravity="center"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold"
                 />
 
             <TextView
@@ -103,10 +122,26 @@
                 android:text="@string/txtSS_carTxt7"
                 android:fontFamily="@font/inter_medium"
                 android:layout_gravity="center"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold"
                 />
 
         </ViewFlipper>
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtSS_carTxt99"
+        android:fontFamily="@font/inter_medium"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carosel"
+        android:layout_marginTop="30dp"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
