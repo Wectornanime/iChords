@@ -3,6 +3,8 @@ package com.example.opp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import com.example.opp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -14,9 +16,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.root.setOnClickListener {
-            val navNextScreen = Intent(this, FirstScreen::class.java)
-            startActivity(navNextScreen)
-        }
+        Handler(Looper.getMainLooper()).postDelayed({
+            val intent = Intent(this, FirstScreen::class.java)
+            startActivity(intent)
+            finish()
+        }, 2000)
     }
 }
