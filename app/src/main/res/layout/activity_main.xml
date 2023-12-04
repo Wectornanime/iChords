@@ -1,57 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     tools:context=".MainActivity">
 
-    <!-- Auto layout, variables, and unit scale are not yet supported -->
-
-
-    <!--
-    <ImageView
-        android:id="@+id/imgTopWave"
-        android:layout_width="782dp"
-        android:layout_height="256dp"
-        android:layout_marginTop="-64dp"
-        android:layout_marginEnd="-126dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/top_frame_1" />
-        -->
-
-    <ImageView
-        android:id="@+id/imgLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/logo" />
-
     <TextView
-        android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:fontFamily="sans-serif"
-        android:text="@string/app_name"
-        android:textAlignment="center"
-        android:textSize="47sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/imgLogo"
+        android:layout_height="match_parent"
+        android:text="Main"
+        android:fontFamily="@font/inter_medium"
+        android:textSize="36sp"
+        android:gravity="center"
         />
 
-    <!--
-    <ImageView
-        android:id="@+id/imgBottomWave"
-        android:layout_width="1475dp"
-        android:layout_height="400dp"
-        android:layout_marginEnd="-251dp"
-        android:layout_marginBottom="-178dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/botton_frame_1" />
-    -->
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
