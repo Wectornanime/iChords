@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">ichords</string>
+
+    <string name="txtFS_carTxt1">Quem canta seus males espanta!\nA nova função karaokê está  sendo implementada</string>
+    <string name="txtFS_carTxt2">Aprecie novos gêneros musicais e a nova aba comunidade</string>
+    <string name="txtFS_carTxt3">Desafie seus amigos! Novo sistema de rankeamento chegou para saber quem é o melhor da turma</string>
+
+    <string name="txtSS_carTxt0">Experimente tocar</string>
+    <string name="txtSS_carTxt1">Marisa Monte</string>
+    <string name="txtSS_carTxt2">Chico Science</string>
+    <string name="txtSS_carTxt3">Freddie Mercury</string>
+    <string name="txtSS_carTxt4">Mitski</string>
+    <string name="txtSS_carTxt5">Lana del Rey</string>
+    <string name="txtSS_carTxt6">Afrodito</string>
+    <string name="txtSS_carTxt7">Lia de Itamaracá</string>
+    <string name="txtSS_carTxt99">Escolha seus artistas favoritos\ncom o novo sistema de recomendação</string>
+
+    <string name="txtTS_Txt">E a maior atualização... nossas\nnovas trilhas de conhecimento!</string>
+    <string name="txtBtnThirdScreen">Conheça agora</string>
+
+    <string name="txtBtnCad">cadastre-se agora</string>
+    <string name="txtBtnCad2">Já tenho uma conta</string>
+    <string name="txtScrCad">Crie uma conta gratuita agora, ou  realize o seu login em uma conta já existente</string>
 </resources>
