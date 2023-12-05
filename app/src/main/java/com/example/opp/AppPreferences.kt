@@ -25,7 +25,7 @@ class AppPreferences {
         //funcao para verificar o login
         fun isLoged(context: Context): Boolean {
             val prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
-            return  prefs.getBoolean(KEY_LOGIN, true)
+            return  prefs.getBoolean(KEY_LOGIN, false)
         }
 
         //funcao para setar o login

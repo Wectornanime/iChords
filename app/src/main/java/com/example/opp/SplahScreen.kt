@@ -25,8 +25,15 @@ class SplahScreen : AppCompatActivity() {
             } else {
                 //Não é a primeira vez
                 //verifica o login
-                val intent = Intent(this, MainActivity::class.java)
-                startActivity(intent)
+                if (AppPreferences.isLoged(this)){
+                    // se ja tiver logado, abre a principal
+                    val intent = Intent(this, MainActivity::class.java)
+                    startActivity(intent)
+                } else {
+                    // se nao tiver logado, abre a CadScreen
+                    val intent = Intent(this, CadScreen::class.java)
+                    startActivity(intent)
+                }
             }
         }, 2000)
     }

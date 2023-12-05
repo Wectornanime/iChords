@@ -19,11 +19,13 @@ class CadScreen : AppCompatActivity() {
 
         // adicionar acao dos botoes
         binding.btnCad.setOnClickListener {
+            AppPreferences.setIsLoged(this, true)
             var intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
         binding.btnLog.setOnClickListener {
+            AppPreferences.setIsLoged(this, true)
             var intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
