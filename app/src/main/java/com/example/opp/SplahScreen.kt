@@ -24,6 +24,7 @@ class SplahScreen : AppCompatActivity() {
                 startActivity(intent)
             } else {
                 //Não é a primeira vez
+                //verifica o login
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
             }
