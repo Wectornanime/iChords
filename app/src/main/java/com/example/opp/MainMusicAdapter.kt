@@ -8,7 +8,7 @@ import android.view.LayoutInflater
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 
-data class Music(val imageResource: Int, val title: String, val description: String)
+data class Music(val imageResource: Int, val musicName: String, val artistName: String)
 
 class MainMusicAdapter(private val context: Context, private val itemList: List<Music>) :
     RecyclerView.Adapter<MainMusicAdapter.ViewHolder>() {
@@ -23,8 +23,8 @@ class MainMusicAdapter(private val context: Context, private val itemList: List<
         val currentItem = itemList[position]
 
         holder.imageView.setImageResource(currentItem.imageResource)
-        holder.textTitle.text = currentItem.title
-        holder.textDescription.text = currentItem.description
+        holder.textTitle.text = currentItem.musicName
+        holder.textDescription.text = currentItem.artistName
     }
 
     override fun getItemCount(): Int {
