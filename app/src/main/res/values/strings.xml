@@ -22,5 +22,9 @@
     <string name="txtBtnCad2">Já tenho uma conta</string>
     <string name="txtScrCad">Crie uma conta gratuita agora, ou  realize o seu login em uma conta já existente</string>
     <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="menu_home">Home</string>
+    <string name="menu_music">Trilha de desafios</string>
+    <string name="menu_profile">Usuário</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
