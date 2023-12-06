@@ -21,4 +21,6 @@
     <string name="txtBtnCad">cadastre-se agora</string>
     <string name="txtBtnCad2">Já tenho uma conta</string>
     <string name="txtScrCad">Crie uma conta gratuita agora, ou  realize o seu login em uma conta já existente</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
