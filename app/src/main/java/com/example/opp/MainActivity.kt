@@ -1,34 +1,26 @@
 package com.example.opp
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
+import androidx.navigation.NavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.NavigationUI
 import com.example.opp.databinding.ActivityMainBinding
-import com.example.opp.AppPreferences.AppPreferences
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-
+    private lateinit var navController: NavController
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        initNavigation()
+    }
 
-        Handler(Looper.getMainLooper()).postDelayed({
-            if (AppPreferences.isFirstRun(this)) {
-                // É a primeira execução, mostra a tela de boas-vindas
-                val intent = Intent(this, FirstScreen::class.java)
-                startActivity(intent)
-                // Após mostrar a tela de boas-vindas, defina a flag para indicar que o aplicativo já foi aberto
-                AppPreferences.setFirstRunFlag(this, false)
-            } else {
-                // Não é a primeira execução, mostra a tela inicial
-                val intent = Intent(this, CadScreen::class.java)
-                startActivity(intent)
-            }
-        }, 2000)
+    private fun initNavigation() {
+        val navHostController = supportFragmentManager.findFragmentById(R.id.mainFragmentFrame) as NavHostFragment
+        navController = navHostController.navController
+        NavigationUI.setupWithNavController(binding.navBarMain, navController)
     }
 }

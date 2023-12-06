@@ -5,4 +5,6 @@
     <color name="txtColor">#727374</color>
     <color name="btnColor">#2CA1FF</color>
     <color name="blue">#2381CC</color>
+    <color name="ic_color">#9E9E9E</color>
+    <color name="ic_color_sel">#0851CB</color>
 </resources>
