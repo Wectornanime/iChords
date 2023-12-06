@@ -10,7 +10,6 @@ import androidx.recyclerview.widget.RecyclerView
 
 class HomeFragment : Fragment() {
 
-    // TODO: Rename and change types of parameters
     override fun onCreateView(
 
         inflater: LayoutInflater, container: ViewGroup?,
@@ -19,10 +18,14 @@ class HomeFragment : Fragment() {
         // Inflar o layout do fragmento
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
-        // Configurar o RecyclerView
-        val recyclerView: RecyclerView = view.findViewById(R.id.recyclerView)
+        // Configurar o RecyclerView de musicas
+        val recyclerViewMusic: RecyclerView = view.findViewById(R.id.recyclerViewMusic)
 
-        val itemList = listOf(
+        // Configurar o RecyclerView de usuarios
+        val recyclerViewUser: RecyclerView = view.findViewById(R.id.recyclerViewUser)
+
+        // configurar a lista do RecyclerView de musicas
+        val itemListMusic = listOf(
             Music(R.drawable.default_disc_img, "Music 1", "Artist 1"),
             Music(R.drawable.default_disc_img, "Music 2", "Artist 2"),
             Music(R.drawable.default_disc_img, "Music 3", "Artist 3"),
@@ -34,10 +37,30 @@ class HomeFragment : Fragment() {
             Music(R.drawable.default_disc_img, "Music 9", "Artist 9")
         )
 
-        val layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
-        val adapter = MainMusicAdapter(requireContext(), itemList)
-        recyclerView.adapter = adapter
-        recyclerView.layoutManager = layoutManager
+        // configurar a lista do RecyclerView de usuarios
+        val itemListUser = listOf(
+            User(R.drawable.default_disc_img, "User 1", "Position 1"),
+            User(R.drawable.default_disc_img, "User 2", "Position 2"),
+            User(R.drawable.default_disc_img, "User 3", "Position 3"),
+            User(R.drawable.default_disc_img, "User 4", "Position 4"),
+            User(R.drawable.default_disc_img, "User 5", "Position 5"),
+            User(R.drawable.default_disc_img, "User 6", "Position 6"),
+            User(R.drawable.default_disc_img, "User 7", "Position 7"),
+            User(R.drawable.default_disc_img, "User 8", "Position 8"),
+            User(R.drawable.default_disc_img, "User 9", "Position 9")
+        )
+
+        // configurar o layout do RecyclerView de musicas
+        val layoutManagerMusic = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+        val adapterMusic = MainMusicAdapter(requireContext(), itemListMusic)
+        recyclerViewMusic.adapter = adapterMusic
+        recyclerViewMusic.layoutManager = layoutManagerMusic
+
+        // configurar o layout do RecyclerView de usuarios
+        val layoutManagerUser = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+        val adapterUser = MainUserAdapter(requireContext(), itemListUser)
+        recyclerViewUser.adapter = adapterUser
+        recyclerViewUser.layoutManager = layoutManagerUser
 
         return view
     }

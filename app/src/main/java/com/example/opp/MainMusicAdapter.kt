@@ -11,15 +11,15 @@ import androidx.recyclerview.widget.RecyclerView
 data class Music(val imageResource: Int, val musicName: String, val artistName: String)
 
 class MainMusicAdapter(private val context: Context, private val itemList: List<Music>) :
-    RecyclerView.Adapter<MainMusicAdapter.ViewHolder>() {
+    RecyclerView.Adapter<MainMusicAdapter.ViewHolderMusic>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolderMusic {
         val view = LayoutInflater.from(context).inflate(R.layout.item_musics_adapter, parent, false)
-        return ViewHolder(view)
+        return ViewHolderMusic(view)
 
     }
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolderMusic, position: Int) {
         val currentItem = itemList[position]
 
         holder.imageView.setImageResource(currentItem.imageResource)
@@ -31,7 +31,7 @@ class MainMusicAdapter(private val context: Context, private val itemList: List<
         return itemList.size
     }
 
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class ViewHolderMusic(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imageView: ImageView = itemView.findViewById(R.id.imageCover)
         val textTitle: TextView = itemView.findViewById(R.id.textMusic)
         val textDescription: TextView = itemView.findViewById(R.id.textArtist)
