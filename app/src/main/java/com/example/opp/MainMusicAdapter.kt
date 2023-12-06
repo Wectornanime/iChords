@@ -1,0 +1,39 @@
+package com.example.opp
+
+import android.view.View
+import android.view.ViewGroup
+import android.widget.TextView
+import android.content.Context
+import android.view.LayoutInflater
+import android.widget.ImageView
+import androidx.recyclerview.widget.RecyclerView
+
+data class Music(val imageResource: Int, val title: String, val description: String)
+
+class MainMusicAdapter(private val context: Context, private val itemList: List<Music>) :
+    RecyclerView.Adapter<MainMusicAdapter.ViewHolder>() {
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        val view = LayoutInflater.from(context).inflate(R.layout.item_musics_adapter, parent, false)
+        return ViewHolder(view)
+
+    }
+
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        val currentItem = itemList[position]
+
+        holder.imageView.setImageResource(currentItem.imageResource)
+        holder.textTitle.text = currentItem.title
+        holder.textDescription.text = currentItem.description
+    }
+
+    override fun getItemCount(): Int {
+        return itemList.size
+    }
+
+    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val imageView: ImageView = itemView.findViewById(R.id.imageCover)
+        val textTitle: TextView = itemView.findViewById(R.id.textMusic)
+        val textDescription: TextView = itemView.findViewById(R.id.textArtist)
+    }
+}
