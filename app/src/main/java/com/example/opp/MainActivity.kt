@@ -2,6 +2,8 @@ package com.example.opp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.replace
 import com.example.opp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
