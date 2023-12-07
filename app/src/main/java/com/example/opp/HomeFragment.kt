@@ -26,28 +26,21 @@ class HomeFragment : Fragment() {
 
         // configurar a lista do RecyclerView de musicas
         val itemListMusic = listOf(
-            Music(R.drawable.default_disc_img, "Music 1", "Artist 1"),
-            Music(R.drawable.default_disc_img, "Music 2", "Artist 2"),
-            Music(R.drawable.default_disc_img, "Music 3", "Artist 3"),
-            Music(R.drawable.default_disc_img, "Music 4", "Artist 4"),
-            Music(R.drawable.default_disc_img, "Music 5", "Artist 5"),
-            Music(R.drawable.default_disc_img, "Music 6", "Artist 6"),
-            Music(R.drawable.default_disc_img, "Music 7", "Artist 7"),
-            Music(R.drawable.default_disc_img, "Music 8", "Artist 8"),
-            Music(R.drawable.default_disc_img, "Music 9", "Artist 9")
+            Music(R.drawable.img_disc_01, "I Guess", "Mitski"),
+            Music(R.drawable.img_disc_02, "A Cidade", "Chico Science"),
+            Music(R.drawable.img_disc_03, "Chocolate", "Marisa Monte"),
+            Music(R.drawable.img_disc_04, "Lanterna dos Afogados", "Os Paralamas do Sucesso"),
+            Music(R.drawable.img_disc_05, "Dark Paradise", "Lana del Rey"),
+            Music(R.drawable.img_disc_06, "Meu São Jorge", "Lia de Itamaracá"),
+            Music(R.drawable.img_disc_07, "O Côro Vai Comê", "Charlie Brown Jr.")
         )
 
         // configurar a lista do RecyclerView de usuarios
         val itemListUser = listOf(
-            User(R.drawable.default_disc_img, "User 1", "Position 1"),
-            User(R.drawable.default_disc_img, "User 2", "Position 2"),
-            User(R.drawable.default_disc_img, "User 3", "Position 3"),
-            User(R.drawable.default_disc_img, "User 4", "Position 4"),
-            User(R.drawable.default_disc_img, "User 5", "Position 5"),
-            User(R.drawable.default_disc_img, "User 6", "Position 6"),
-            User(R.drawable.default_disc_img, "User 7", "Position 7"),
-            User(R.drawable.default_disc_img, "User 8", "Position 8"),
-            User(R.drawable.default_disc_img, "User 9", "Position 9")
+            User(R.drawable.img_user_1, "Eduardo", "4 músicas"),
+            User(R.drawable.img_user_2, "Luiz", "3 músicas"),
+            User(R.drawable.img_user_3, "Renata", "2 músicas"),
+            User(R.drawable.img_user_4, "Rodrigo", "1 música")
         )
 
         // configurar o layout do RecyclerView de musicas
