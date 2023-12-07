@@ -18,8 +18,8 @@
         tools:layout="@layout/fragment_music"
         >
         <action
-            android:id="@+id/action_menu_music_to_lessonFragment"
-            app:destination="@id/lessonFragment" />
+            android:id="@+id/action_menu_music_to_lesson2Fragment"
+            app:destination="@id/lesson2Fragment" />
     </fragment>
 
     <fragment
@@ -44,7 +44,11 @@
         android:id="@+id/lesson2Fragment"
         android:name="com.example.opp.Lesson2Fragment"
         android:label="fragment_lesson2"
-        tools:layout="@layout/fragment_lesson2" />
+        tools:layout="@layout/fragment_lesson2" >
+        <action
+            android:id="@+id/action_lesson2Fragment_to_lessonFragment"
+            app:destination="@id/lessonFragment" />
+    </fragment>
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.example.opp.SettingsFragment"
