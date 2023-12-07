@@ -31,5 +31,10 @@
     <string name="frag_home_title2">Confira o pódio</string>
     <string name="frag_home_subtitle2">conquiste o 1º lugar</string>
 
+    <string name="frag_prof_usrNm">Rodrigo</string>
+    <string name="frag_prof_usrLvl">Rockstar nível 4</string>
+    <string name="frag_prof_title1">Evolução</string>
+    <string name="frag_prof_title2">Amigos</string>
+
 
 </resources>
