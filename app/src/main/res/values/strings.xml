@@ -55,5 +55,13 @@
     <string name="frag_leasson2_opc2">Avançado</string>
     <string name="frag_leasson2_opc3">Me desafie!</string>
 
+    <string name="frag_sett_txt0">Ajustes</string>
+    <string name="frag_sett_usrNm">Rodrigo</string>
+    <string name="frag_sett_usrMail">rodrigo@ichords.com</string>
+    <string name="frag_sett_opc0">Segurança</string>
+    <string name="frag_sett_opc1">Notificações</string>
+    <string name="frag_sett_opc2">Idioma</string>
+    <string name="frag_sett_opc3">Tempo gasto</string>
+    <string name="frag_sett_opc4">Acessibilidade</string>
 
 </resources>

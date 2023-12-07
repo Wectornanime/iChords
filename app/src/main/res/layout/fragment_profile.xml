@@ -18,6 +18,17 @@
         />
 
     <ImageView
+        android:id="@+id/imgSett"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        app:srcCompat="@drawable/baseline_settings_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ImageView
         android:id="@+id/imgUser"
         android:layout_width="150dp"
         android:layout_height="150dp"
