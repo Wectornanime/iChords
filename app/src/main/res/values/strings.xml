@@ -36,5 +36,15 @@
     <string name="frag_prof_title1">Evolução</string>
     <string name="frag_prof_title2">Amigos</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="frag_leasson_txt0">Que acorde é esse?</string>
+    <string name="frag_leasson_txt1">A Cidade</string>
+    <string name="frag_leasson_txt2">Chico Science</string>
+    <string name="frag_leasson_opc0">C</string>
+    <string name="frag_leasson_opc1">D</string>
+    <string name="frag_leasson_opc2">E</string>
+    <string name="frag_leasson_opc3">F</string>
+
 
 </resources>

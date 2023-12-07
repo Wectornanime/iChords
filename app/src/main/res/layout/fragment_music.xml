@@ -66,6 +66,6 @@
         app:layout_constraintTop_toBottomOf="@id/imgBtn_lock3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/btn_test" />
+        app:srcCompat="@drawable/btn_start" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
