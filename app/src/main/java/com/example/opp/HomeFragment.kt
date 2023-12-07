@@ -5,55 +5,57 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [HomeFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class HomeFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
 
     override fun onCreateView(
+
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        // Inflar o layout do fragmento
+        val view = inflater.inflate(R.layout.fragment_home, container, false)
+
+        // Configurar o RecyclerView de musicas
+        val recyclerViewMusic: RecyclerView = view.findViewById(R.id.recyclerViewMusic)
+
+        // Configurar o RecyclerView de usuarios
+        val recyclerViewUser: RecyclerView = view.findViewById(R.id.recyclerViewUser)
+
+        // configurar a lista do RecyclerView de musicas
+        val itemListMusic = listOf(
+            Music(R.drawable.img_disc_01, "I Guess", "Mitski"),
+            Music(R.drawable.img_disc_02, "A Cidade", "Chico Science"),
+            Music(R.drawable.img_disc_03, "Chocolate", "Marisa Monte"),
+            Music(R.drawable.img_disc_04, "Lanterna dos Afogados", "Os Paralamas do Sucesso"),
+            Music(R.drawable.img_disc_05, "Dark Paradise", "Lana del Rey"),
+            Music(R.drawable.img_disc_06, "Meu São Jorge", "Lia de Itamaracá"),
+            Music(R.drawable.img_disc_07, "O Côro Vai Comê", "Charlie Brown Jr.")
+        )
+
+        // configurar a lista do RecyclerView de usuarios
+        val itemListUser = listOf(
+            User(R.drawable.img_user_1, "Eduardo", "4 músicas"),
+            User(R.drawable.img_user_2, "Luiz", "3 músicas"),
+            User(R.drawable.img_user_3, "Renata", "2 músicas"),
+            User(R.drawable.img_user_4, "Rodrigo", "1 música")
+        )
+
+        // configurar o layout do RecyclerView de musicas
+        val layoutManagerMusic = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+        val adapterMusic = MainMusicAdapter(requireContext(), itemListMusic)
+        recyclerViewMusic.adapter = adapterMusic
+        recyclerViewMusic.layoutManager = layoutManagerMusic
+
+        // configurar o layout do RecyclerView de usuarios
+        val layoutManagerUser = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+        val adapterUser = MainUserAdapter(requireContext(), itemListUser)
+        recyclerViewUser.adapter = adapterUser
+        recyclerViewUser.layoutManager = layoutManagerUser
+
+        return view
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment HomeFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            HomeFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
-    }
 }
