@@ -39,6 +39,9 @@
         <action
             android:id="@+id/action_lessonFragment_to_menu_music"
             app:destination="@id/menu_music" />
+        <action
+            android:id="@+id/action_lessonFragment_to_lesson2Fragment"
+            app:destination="@id/lesson2Fragment" />
     </fragment>
     <fragment
         android:id="@+id/lesson2Fragment"

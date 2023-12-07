@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/frag_leasson2_txt0"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/inter"
         android:textSize="16sp"
         app:layout_constraintTop_toBottomOf="@id/imgLogo"

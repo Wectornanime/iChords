@@ -24,7 +24,7 @@ class LessonFragment : Fragment() {
         // Inflate the layout for this fragment
         var view = inflater.inflate(R.layout.fragment_lesson, container, false)
         view.findViewById<Button>(R.id.frag_leasson_opc0).setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_lessonFragment_to_menu_music)
+            Navigation.findNavController(view).navigate(R.id.action_lessonFragment_to_lesson2Fragment)
         }
 
         return view
