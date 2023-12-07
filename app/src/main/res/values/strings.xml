@@ -31,5 +31,37 @@
     <string name="frag_home_title2">Confira o pódio</string>
     <string name="frag_home_subtitle2">conquiste o 1º lugar</string>
 
+    <string name="frag_prof_usrNm">Rodrigo</string>
+    <string name="frag_prof_usrLvl">Rockstar nível 4</string>
+    <string name="frag_prof_title1">Evolução</string>
+    <string name="frag_prof_title2">Amigos</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="frag_leasson_txt0">Que acorde é esse?</string>
+    <string name="frag_leasson_txt1">A Cidade</string>
+    <string name="frag_leasson_txt2">Chico Science</string>
+    <string name="frag_leasson_opc0">C</string>
+    <string name="frag_leasson_opc1">D</string>
+    <string name="frag_leasson_opc2">E</string>
+    <string name="frag_leasson_opc3">F</string>
+
+    <string name="frag_leasson2_txt0">Aprenda mais com nossas trilhas</string>
+    <string name="frag_leasson2_txt1">A Cidade</string>
+    <string name="frag_leasson2_txt2">Chico Science</string>
+    <string name="frag_leasson2_opc0">Básico</string>
+    <string name="frag_leasson2_opc1">Intermediário</string>
+    <string name="frag_leasson2_opc2">Avançado</string>
+    <string name="frag_leasson2_opc3">Me desafie!</string>
+
+    <string name="frag_sett_txt0">Ajustes</string>
+    <string name="frag_sett_usrNm">Rodrigo</string>
+    <string name="frag_sett_usrMail">rodrigo@ichords.com</string>
+    <string name="frag_sett_opc0">Segurança</string>
+    <string name="frag_sett_opc1">Notificações</string>
+    <string name="frag_sett_opc2">Idioma</string>
+    <string name="frag_sett_opc3">Tempo gasto</string>
+    <string name="frag_sett_opc4">Acessibilidade</string>
 
 </resources>

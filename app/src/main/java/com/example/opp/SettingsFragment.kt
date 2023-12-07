@@ -9,7 +9,7 @@ import android.widget.Button
 import android.widget.ImageView
 import androidx.navigation.Navigation
 
-class MusicFragment : Fragment() {
+class SettingsFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,18 +23,19 @@ class MusicFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_music, container, false)
-        view.findViewById<ImageView>(R.id.imgBtn_start).setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_menu_music_to_lessonFragment)
+        var view = inflater.inflate(R.layout.fragment_settings, container, false)
+        view.findViewById<ImageView>(R.id.imgBack).setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.action_settingsFragment_to_menu_profile)
         }
 
         return view
+
     }
 
     companion object {
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            MusicFragment().apply {
+            SettingsFragment().apply {
                 arguments = Bundle().apply {
 
                 }
