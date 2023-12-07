@@ -34,7 +34,7 @@
         android:id="@+id/imgChord"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         app:srcCompat="@drawable/img_chord"
         app:layout_constraintTop_toBottomOf="@id/frag_leasson_txt0"
         app:layout_constraintStart_toStartOf="parent"

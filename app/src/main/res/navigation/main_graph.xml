@@ -16,12 +16,25 @@
         android:name="com.example.opp.MusicFragment"
         android:label="fragment_music"
         tools:layout="@layout/fragment_music"
-        />
+        >
+        <action
+            android:id="@+id/action_menu_music_to_lessonFragment"
+            app:destination="@id/lessonFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/menu_profile"
         android:name="com.example.opp.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/lessonFragment"
+        android:name="com.example.opp.LessonFragment"
+        android:label="fragment_lesson"
+        tools:layout="@layout/fragment_lesson" >
+        <action
+            android:id="@+id/action_lessonFragment_to_menu_music"
+            app:destination="@id/menu_music" />
+    </fragment>
 
 </navigation>
