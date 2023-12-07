@@ -36,5 +36,10 @@
             android:id="@+id/action_lessonFragment_to_menu_music"
             app:destination="@id/menu_music" />
     </fragment>
+    <fragment
+        android:id="@+id/lesson2Fragment"
+        android:name="com.example.opp.Lesson2Fragment"
+        android:label="fragment_lesson2"
+        tools:layout="@layout/fragment_lesson2" />
 
 </navigation>

@@ -38,6 +38,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
     <string name="frag_leasson_txt0">Que acorde é esse?</string>
     <string name="frag_leasson_txt1">A Cidade</string>
     <string name="frag_leasson_txt2">Chico Science</string>
@@ -45,6 +46,14 @@
     <string name="frag_leasson_opc1">D</string>
     <string name="frag_leasson_opc2">E</string>
     <string name="frag_leasson_opc3">F</string>
+
+    <string name="frag_leasson2_txt0">Aprenda mais com nossas trilhas</string>
+    <string name="frag_leasson2_txt1">A Cidade</string>
+    <string name="frag_leasson2_txt2">Chico Science</string>
+    <string name="frag_leasson2_opc0">Básico</string>
+    <string name="frag_leasson2_opc1">Intermediário</string>
+    <string name="frag_leasson2_opc2">Avançado</string>
+    <string name="frag_leasson2_opc3">Me desafie!</string>
 
 
 </resources>
