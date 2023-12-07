@@ -25,7 +25,7 @@ class MusicFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_music, container, false)
         view.findViewById<ImageView>(R.id.imgBtn_start).setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_menu_music_to_lessonFragment)
+            Navigation.findNavController(view).navigate(R.id.action_menu_music_to_lesson2Fragment)
         }
 
         return view

@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import androidx.navigation.Navigation
 
 class Lesson2Fragment : Fragment() {
 
@@ -20,6 +22,13 @@ class Lesson2Fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+        var view = inflater.inflate(R.layout.fragment_lesson2, container, false)
+        view.findViewById<Button>(R.id.frag_leasson2_opc0).setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.action_lesson2Fragment_to_lessonFragment)
+        }
+
+        return view
+
         return inflater.inflate(R.layout.fragment_lesson2, container, false)
     }
 
